@@ -106,6 +106,11 @@ a.logo span {
     font-family: 'Open Sans', sans-serif;
 }
 
+a.logo img {
+    /*background-color: red;*/
+    width : 200px;
+}
+
 /*-- //logo --*/
 
 .navbar-nav {
@@ -294,7 +299,7 @@ ul.dropdown-menu.agile_short_dropdown {
 /*-- banner --*/
 
 .carousel .item {
-    background: url(../images/1.jpg) no-repeat center;
+    background: url(../images/pintura1.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -303,7 +308,7 @@ ul.dropdown-menu.agile_short_dropdown {
 }
 
 .carousel .item.item2 {
-    background: url(../images/2.jpg) no-repeat center;
+    background: url(../images/pintura2.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -312,7 +317,7 @@ ul.dropdown-menu.agile_short_dropdown {
 }
 
 .carousel .item.item3 {
-    background: url(../images/3.jpg) no-repeat center;
+    background: url(../images/pintura3.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1471,6 +1476,12 @@ i.fa-envelope-o {
     a.logo h1 {
         font-size: 36px;
     }
+
+    a.logo img {
+        /*background-color: red;*/
+        width : 180px;
+    }
+
     .navbar-nav {
         width: 75%;
     }
