@@ -1,0 +1,46 @@
+{
+  "name": "pinturaslimaweb",
+  "version": "1.0.0",
+  "description": "Pinturas Lima website",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charleslima/pinturaslimaweb.git"
+  },
+  "author": "Julio Lozovei <jlozovei@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charleslima/pinturaslimaweb/issues"
+  },
+  "homepage": "https://github.com/charleslima/pinturaslimaweb#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.6",
+    "cssnano": "^4.1.10",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "postcss-custom-properties": "^8.0.10",
+    "postcss-custom-selectors": "^5.1.2",
+    "precss": "^4.0.0",
+    "prettier": "^1.17.1",
+    "rucksack-css": "^1.0.2",
+    "terser-webpack-plugin": "^1.2.4",
+    "webpack": "^4.31.0",
+    "webpack-stream": "^5.2.1"
+  }
+}
