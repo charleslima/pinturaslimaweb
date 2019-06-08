@@ -1,0 +1,14 @@
+@import './settings/_colors';
+@import './settings/_sizes';
+@import './settings/_customMedia';
+
+@import './generic/_reset';
+@import './generic/_custom';
+
+@import './components/_buttons';
+@import './components/_forms';
+@import './components/_sections';
+
+@import './components/_header';
+@import './components/_footer';
+@import './components/_page';

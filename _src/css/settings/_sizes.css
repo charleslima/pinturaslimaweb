@@ -1,0 +1,16 @@
+$grid_width: 990px;
+
+$grid_min: 300px;
+$grid_max: $grid_width;
+
+$xs: 467px;
+$m-xs: 468px;
+
+$sm: 767px;
+$m-sm: 768px;
+
+$md: 991px;
+$m-md: 992px;
+
+$lg: 1199px;
+$m-lg: 1200px;

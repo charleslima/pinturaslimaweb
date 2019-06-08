@@ -1,0 +1,51 @@
+.page__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $white;
+  box-shadow: 0 10px 30px -10px rgba(12, 12, 12, .5);
+  padding: 2rem 2.5rem;
+  z-index: 3;
+
+  .logo {
+    max-width: 12rem;
+  }
+
+  .phones {
+    position: relative;
+
+    li {
+      display: inline-block;
+      padding: 0 1rem;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: $curious;
+        text-decoration: none;
+        cursor: pointer;
+        transition: color ease-in-out 120ms;
+
+        &:hover {
+          color: $matisse;
+        }
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-left: 0;
+      }
+    }
+  }
+}

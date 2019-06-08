@@ -1,0 +1,23 @@
+.page__footer {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+
+  p {
+    position: relative;
+    font-size: responsive .875rem 1rem;
+    font-range: $grid_min $grid_max;
+    line-height: 1.63;
+
+    &:after{
+      display: block;
+      position: absolute;
+      bottom: -1.5rem;
+      left: 50%;
+      height: 2rem;
+      width: 5rem;
+      background: url(../img/brush.png) no-repeat center/contain;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.form {
+  position: relative;
+
+  &__row {
+    margin-bottom: 1.125rem;
+
+    &--actions {
+      text-align: right;
+      margin-top: 1.25rem;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: responsive .875rem 1rem;
+    font-range: $grid_min $grid_max;
+    margin-bottom: .125rem;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: $white;
+    padding: .75rem;
+    border: 1px solid $tundora;
+    border-radius: 3px;
+    font-size: .875rem;    
+    color: $mine_shaft;
+    transition: all ease-in-out 120ms;
+
+    &:focus {
+      box-shadow: 0 0 4px $cornflower;
+      border-color: $astral;
+    }
+  }
+
+  select {
+    background-image: url(../icons/chevron.svg);
+    background-position: 98% center;
+    background-repeat: no-repeat;
+  }
+}

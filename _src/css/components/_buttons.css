@@ -1,0 +1,36 @@
+.button {
+  display: inline-block;
+  position: relative;
+  padding: .875rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: .875rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  cursor: pointer;
+  transition: all ease-in-out 180ms;
+
+  &--submit {
+    min-width: 12rem;
+  }
+
+  &--blue {
+    background-color: $cornflower;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 10px 30px -10px rgba(12, 12, 12, .5);
+    }
+
+    &:hover {
+      background-color: $curious;
+    }
+
+    &:focus {
+      background-color: $astral;
+    }
+  }
+}
