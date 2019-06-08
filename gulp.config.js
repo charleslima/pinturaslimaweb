@@ -25,7 +25,7 @@ const config = {
     livereload: true,
     root: ['.'],
     host: 'localhost',
-    port: 6000,
+    port: 8001,
     name: 'Pinturas Lima'
   }
 };
