@@ -4,11 +4,10 @@
     "browser": true,
     "es6": true
   },
-  "plugins": ["prettier"],
-  "extends": [
-    "eslint:recommended",
-    "plugin:vue/essential"
+  "plugins": [
+    "prettier"
   ],
+  "extends": "eslint:recommended",
   "parserOptions": {
     "ecmaVersion": 2016,
     "sourceType": "module"

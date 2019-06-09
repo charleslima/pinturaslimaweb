@@ -1,6 +1,7 @@
 'use strict';
 
 import config from './gulp.config';
+import webpackConfig from './webpack.config';
 
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
@@ -40,6 +41,17 @@ gulp.task('css', () => {
     .pipe(connect.reload());
 });
 
+gulp.task('js', () => {
+  return gulp
+    .src(`${config.src.js}/*.js`)
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(webpack(webpackConfig))
+    .on('error', handleError)
+    .pipe(gulp.dest(config.dist.js))
+    .pipe(connect.reload());
+});
+
 gulp.task('templates:nunjucks', () => {
   return gulp
     .src(`${config.src.templates}/**/*.nunjucks`)
@@ -68,6 +80,9 @@ gulp.task('default', () => {
 
   // watch all css files
   gulp.watch(`${config.src.css}/**/*.css`, gulp.series('css'));
+
+  // watch all js files
+  gulp.watch(`${config.src.js}/**/*.js`, gulp.series('js'));
 
   // watch all nunjucks files
   gulp.watch(`${config.src.templates}/**/*.+(html|nunjucks)`, gulp.series('templates:nunjucks'));
