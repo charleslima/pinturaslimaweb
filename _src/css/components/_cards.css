@@ -1,0 +1,19 @@
+.card {
+  position: relative;
+  padding: 1.125rem 1.75rem;
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px -10px rgba(12, 12, 12, .5);
+
+  &__title {
+    font-size: responsive 1rem 1.125rem;
+    font-range: $grid_min $grid_max;
+    line-height: 1.32;
+    color: $cornflower;
+    margin-bottom: 1rem;
+  }
+
+  @media (--m-sm) {
+    padding: 2rem 2.125rem;
+  }
+}

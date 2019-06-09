@@ -2,3 +2,8 @@ body,
 .page {
   min-height: 100vh;
 }
+
+html,
+body{
+  font-family: Muli, arial, sans-serif;
+}

@@ -1,6 +1,6 @@
 .page__header {
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 0;
   width: 100%;
   display: flex;
@@ -12,6 +12,11 @@
   box-shadow: 0 10px 30px -10px rgba(12, 12, 12, .5);
   padding: 2rem 2.5rem;
   z-index: 3;
+  transition: top ease-in-out 1s;
+
+  &--visible{
+    top: 0;
+  }
 
   .logo {
     max-width: 12rem;

@@ -1,0 +1,25 @@
+.slideshow {
+  position: relative;
+
+  &__controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+      background-color: $silver;
+      width: .625rem;
+      height: .625rem;
+      border-radius: 100%;
+      cursor: pointer;
+      transition: background-color ease-in-out 120ms;
+      margin: 1rem;
+
+      &.active {
+        background-color: $curious;
+      }
+    }
+  }
+}

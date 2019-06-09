@@ -8,6 +8,7 @@
     font-size: responsive .875rem 1rem;
     font-range: $grid_min $grid_max;
     line-height: 1.63;
+    color: $mine_shaft;
 
     &:after{
       display: block;
