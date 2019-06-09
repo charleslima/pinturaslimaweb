@@ -1,0 +1,158 @@
+{% extends "_layout/_base.html" %}
+
+{% block header %}
+<title>Pinturas Lima</title>
+{% endblock %}
+
+{% block content %}
+<div class="page__content">
+  <section class="section section--headline">
+    <div class="section__container">
+      <h1>Pensando em reformar?<br/>Pinturas Lima é a melhor opção!</h1>
+      <h2>Confira nossos serviços exclusivos de grafiato, aplicação de texturas e reparos em geral!</h2>
+
+      <div class="section__phones">
+        <a class="whatsapp">(41) 99859-7525</a>
+        <a class="whatsapp">(41) 99649-4391</a>
+        <a class="fix">(41) 3338-1430</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--about">
+    <div class="section__container">
+      <h2 class="section__title">Qualidade pelo menor preço!</h2>
+
+      <p class="section__text">Presentes no mercado desde 2007, realizamos serviços de reformas, acabamentos, texturas e reparos para casas, apartamentos, escritórios, escolas, igrejas, garagens e diversos ambientes.</p>
+
+      <p class="section__text">Somos experts na aplicação de <strong>grafiatos</strong>, <strong>ranhuras</strong>, <strong>riscados</strong> e <strong>espatulados</strong>.</p>
+
+      <p class="section__text">Atendemos toda Curitiba e Região Metropolitana. Venha fazer um orçamento com a gente!</p>
+
+      <div id="slideshow" class="slideshow">
+        <div class="slideshow__images">
+          <div class="section__images">
+            {% set items =
+              [
+                {
+                  src: './img/intern1.jpeg',
+                  alt: ''
+                },
+
+                {
+                  src: './img/intern2.jpeg',
+                  alt: ''
+                },
+
+                {
+                  src: './img/intern3.jpeg',
+                  alt: ''
+                },
+
+                {
+                  src: './img/intern4.jpeg',
+                  alt: ''
+                },
+
+                {
+                  src: './img/intern5.jpeg',
+                  alt: ''
+                },
+
+                {
+                  src: './img/intern6.jpg',
+                  alt: ''
+                }
+              ]
+            %}
+
+            {% for figure in items %}
+              <figure {% if loop.index === 1 %} class="active" {% endif %}>
+                <img src="{{ figure.src }}" alt="{{ figure.alt }}">
+              </figure>
+              
+            {% endfor %}
+          </div>
+        </div>
+
+        <ul class="slideshow__controls">
+          {% for figure in items %}
+          <li data-slide="{{ loop.index }}" {% if loop.index === 1 %} class="active" {% endif %}></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--contact">
+    <div class="section__container">
+      <h2 class="section__title">Entre em contato conosco!</h2>
+      <p class="section__text">Solicite uma visita através do formulário abaixo, ou ligue para nós:</p>
+
+      <div class="grid">
+        <div class="grid__column">
+          <form class="form card">
+            <fieldset>
+              <div class="form__row">
+                <label class="form__label" for="form_name">Nome</label>
+                <input class="form__input" type="text" name="name" id="form_name" placeholder="Insira seu nome">
+              </div>
+
+              <div class="form__row">
+                <label class="form__label" for="form_email">E-mail</label>
+                <input class="form__input" type="text" name="email" id="form_email" placeholder="email@exemplo.com">
+              </div>
+
+              <div class="form__row">
+                <label class="form__label" for="form_subject">Assunto</label>
+                <select class="form__input" name="subject" id="form_subject">
+                  <option selected disabled>Selecione aqui</option>
+                  <option value="Orçamento">Orçamento</option>
+                  <option value="Outros">Outros</option>
+                </select>
+              </div>
+
+              <div class="form__row">
+                <label class="form__label" for="form_message">Mensagem</label>
+                <textarea class="form__input" name="form_message" id="form_message" rows="4"></textarea>
+              </div>
+
+              <div class="form__row form__row--actions">
+                <input type="submit" value="Enviar" class="button button--submit button--blue">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="grid__column">
+          <div class="card">
+            <h3 class="card__title">Telefones</h3>
+
+            <ul>
+              <li>
+                <a class="whatsapp">(41) 99859-7525</a>
+              </li>
+              <li>
+                <a class="whatsapp">(41) 99649-4391</a>
+              </li>
+              <li>
+                <a class="fix">(41) 3338-1430</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card__title">Email</h3>
+
+            <a>pinturas.lima@hotmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
+
+{% block footer %}
+<script type="text/javascript" src="./js/index.js"></script>
+{% endblock %}
