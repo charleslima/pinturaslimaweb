@@ -1,27 +1,27 @@
 import homeBg from '../assets/home_bg.jpg';
 
-export default function Hero() {
+export default function Banner() {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center overflow-hidden"
+      className="relative h-[60vh] md:h-screen flex items-center overflow-hidden"
     >
       {/* Background Image */}
       <img
         src={homeBg}
-        alt="Hero background"
-        className="absolute inset-0 w-full h-full object-cover"
+        alt="Banner background"
+        className="absolute inset-0 w-full h-full object-cover object-right"
       />
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-white max-w-2xl px-12 py-16 flex flex-col gap-8">
-        <h1 className="text-5xl md:text-6xl font-bold">
+      <div className="relative z-10 text-white max-w-2xl px-4 sm:px-8 md:px-12 py-4 sm:py-8 md:py-16 flex flex-col gap-4 sm:gap-8">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
           Pintor em Curitiba.
         </h1>
-        <p className="text-xl md:text-2xl text-gray-100">
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-100">
           Sua escolha confiável para serviços de pintura em Curitiba e região metropolitana
         </p>
         <a

@@ -1,5 +1,5 @@
 import Navigation from './components/Navigation';
-import Hero from './components/Hero';
+import Banner from './components/Banner';
 import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="w-full bg-white">
       <Navigation />
-      <Hero />
+      <Banner />
       <About />
       <Services />
       <Contact />
