@@ -1,31 +1,16 @@
-import ResidencialImg from '../assets/residencial.png';
-import ComercialImg from '../assets/comercial.jpg';
-import InterioresImg from '../assets/interiores.jpeg';
+import NavigationSection from '../sections/Navigation';
+import FooterSection from '../sections/Footer';
 
-export default function Services() {
-  const services = [
-    {
-      id: 1,
-      title: 'Residencial',
-      description: 'Pinturas para casas e apartamentos com acabamento perfeito',
-      image: ResidencialImg,
-    },
-    {
-      id: 2,
-      title: 'Comercial',
-      description: 'Soluções para lojas, escritórios e edifícios comerciais',
-      image: ComercialImg,
-    },
-    {
-      id: 3,
-      title: 'Interiores',
-      description: 'Design e pintura de ambientes internos com criatividade',
-      image: InterioresImg,
-    },
-  ];
+import ContactSection from '../sections/Contact';
+import { services } from '../services';
+
+function Services() {
 
   return (
-    <section id="services" className="py-16 bg-white">
+    <div className="w-full bg-white">
+      <NavigationSection />
+      
+      <section id="services" className="py-16 bg-white">
       <div className="text-center px-4 flex flex-col gap-6 mb-40">
         <h2 className="text-4xl font-bold text-gray-900">
           Nossos Serviços
@@ -43,7 +28,7 @@ export default function Services() {
             className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
           >
             {/* Service Image */}
-            <div className="h100 overflow-hidden bg-gray-200">
+            <div className="h-80 overflow-hidden bg-gray-200">
               <img
                 src={service.image}
                 alt={service.title}
@@ -65,5 +50,10 @@ export default function Services() {
         </div>
       </div>
     </section>
+      <ContactSection />
+      <FooterSection />
+    </div >
   );
 }
+
+export default Services;

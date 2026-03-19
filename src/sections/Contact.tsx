@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-export default function Contact() {
+export default function ContactSection() {
   const whatsappLink = useMemo(() => {
     const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
 

@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import icon from '../assets/icon.svg';
-
-export default function Navigation() {
+import { Link } from 'react-router-dom';
+import WhatsPng from '../assets/whatsapp.png';
+export default function NavigationSection() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -15,19 +16,29 @@ export default function Navigation() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden sm:flex gap-8 ml-auto">
-          <a href="#home" className="text-gray-700 hover:text-gray-900 transition-colors">
+        <div className="hidden sm:flex gap-8 ml-auto items-center">
+          <Link to="/" className="text-gray-700 hover:text-gray-900 transition-colors">
             Início
-          </a>
-          <a href="#about" className="text-gray-700 hover:text-gray-900 transition-colors">
+          </Link>
+          <Link to="/about" className="text-gray-700 hover:text-gray-900 transition-colors">
             Sobre
-          </a>
-          <a href="#services" className="text-gray-700 hover:text-gray-900 transition-colors">
+          </Link>
+          <Link to="/services" className="text-gray-700 hover:text-gray-900 transition-colors">
             Serviços
-          </a>
-          <a href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors">
+          </Link>
+          <Link to="/contact" className="text-gray-700 hover:text-gray-900 transition-colors">
             Contato
-          </a>
+          </Link>
+          <div className="flex justify-center gap-6">
+            <a
+              href="http://wa.me/5541996494391"
+              target="_blank"
+              rel="noopener noreferrer"
+              className='flex items-center gap-2'>
+              <img src={WhatsPng} alt="(41) 99649-4391" className="h-6 w-6" />
+              <p className="text-gray-700 underline text-sm ml-1">(41) 99649-4391</p>
+            </a>
+          </div>
         </div>
 
         {/* Hamburger Menu Button */}
@@ -46,34 +57,44 @@ export default function Navigation() {
       {isOpen && (
         <div className="sm:hidden bg-gray-50 border-t border-gray-200">
           <div className="px-4 py-3 space-y-2">
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="block text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Início
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              to="/about"
               className="block text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Sobre
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              to="/services"
               className="block text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Serviços
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/contact"
               className="block text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Contato
+            </Link>
+             <div className="flex px-3 py-2 gap-6">
+            <a
+              href="http://wa.me/5541996494391"
+              target="_blank"
+              rel="noopener noreferrer"
+              className='flex items-center gap-2'>
+              <img src={WhatsPng} alt="(41) 99649-4391" className="h-6 w-6" />
+              <p className="text-gray-700 underline text-sm ml-1">(41) 99649-4391</p>
             </a>
+          </div>
           </div>
         </div>
       )}

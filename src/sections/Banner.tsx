@@ -1,6 +1,6 @@
 import homeBg from '../assets/home_bg.jpg';
 
-export default function Banner() {
+export default function BannerSection() {
   return (
     <section
       id="home"

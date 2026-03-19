@@ -1,19 +1,19 @@
-import Navigation from './components/Navigation';
-import Banner from './components/Banner';
-import About from './components/About';
-import Services from './components/Services';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import NavigationSection from './sections/Navigation';
+import BannerSection from './sections/Banner';
+import AboutSection from './sections/About';
+import ServicesSection from './sections/Services';
+import ContactSection from './sections/Contact';
+import FooterSection from './sections/Footer';
 
 function App() {
   return (
     <div className="w-full bg-white">
-      <Navigation />
-      <Banner />
-      <About />
-      <Services />
-      <Contact />
-      <Footer />
+      <NavigationSection />
+      <BannerSection />
+      <AboutSection />
+      <ServicesSection />
+      <ContactSection />
+      <FooterSection />
     </div>
   );
 }
