@@ -9,7 +9,7 @@ export default function BannerSection() {
       {/* Background Image */}
       <img
         src={homeBg}
-        alt="Banner background"
+        alt="Ambiente com pintura profissional realizada pela Pinturas Lima em Curitiba"
         className="absolute inset-0 w-full h-full object-cover object-right"
       />
 

@@ -12,8 +12,8 @@ export default function FooterSection() {
           <p className="text-gray-400 text-sm">
             © {currentYear} Pinturas Lima. Todos os direitos reservados.
           </p>
-          <p className="text-gray-400 text-[8px]">
-            Pintor em Curitiba - Pintor no CIC - Pintor nas Mercês - Pintor no Água Verde - Pintor no Portão - Pintor no Boa Vista - Pintor no Campo Comprido - Pintor no Bigorrilho - Pintor no Cabral - Pintor no Centro - Pintor no Sítio Cercado - Pintor em Santa Felicidade - Pintor no Boqueirão - Pintor no Xaxim - Pintor em São José dos Pinhais - Pintor em Pinhais - Pintor no Batel - Pintor no Cajuru - Pintor no Pilarzinho
+          <p className="text-gray-400 text-sm text-center sm:max-w-md">
+            Atendemos Curitiba e região metropolitana com serviços de pintura residencial, comercial e acabamentos especiais.
           </p>
           <div>
             <div className="flex justify-center gap-6">

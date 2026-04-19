@@ -10,7 +10,7 @@ export default function AboutSection() {
             <div className="w-full bg-gray-300 rounded-lg overflow-hidden">
               <img
                 src={aboutImg}
-                alt="about background"
+                alt="Equipe da Pinturas Lima em serviço de pintura residencial em Curitiba"
                 className="w-full h-full object-cover"
               />
             </div>

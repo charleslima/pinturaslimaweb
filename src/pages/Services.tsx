@@ -3,18 +3,24 @@ import FooterSection from '../sections/Footer';
 
 import ContactSection from '../sections/Contact';
 import { services } from '../services';
+import Seo from '../components/Seo';
 
 function Services() {
 
   return (
     <div className="w-full bg-white">
+      <Seo
+        title="Serviços de Pintura em Curitiba | Pinturas Lima"
+        description="Veja os serviços de pintura da Pinturas Lima em Curitiba: residencial, comercial, interiores, texturas, grafiato, cimento queimado e mais."
+        path="/services"
+      />
       <NavigationSection />
       
       <section id="services" className="py-16 bg-white">
       <div className="text-center px-4 flex flex-col gap-6 mb-40">
-        <h2 className="text-4xl font-bold text-gray-900">
+        <h1 className="text-4xl font-bold text-gray-900">
           Nossos Serviços
-        </h2>
+        </h1>
         <p className="text-xl text-gray-600">
           Oferecemos soluções completas de pintura para todos os tipos de espaço
         </p>
